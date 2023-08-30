@@ -5,7 +5,9 @@
 extern Coffee::Application* Coffee::CreateApplication();
 
 int main(int argc, char** argv) {
-	printf("Coffee");
+
+	Coffee::Log::Init();
+
 	auto app = Coffee::CreateApplication();
 	app->Run();
 	delete app;

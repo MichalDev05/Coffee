@@ -1,0 +1,3 @@
+[submodule "Coffee/vendor/spdlog"]
+	path = Coffee/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
