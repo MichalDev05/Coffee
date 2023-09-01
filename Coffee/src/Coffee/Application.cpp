@@ -1,3 +1,4 @@
+#include "cfpch.h"
 #include "Application.h"
 
 #include "Coffee/Events/ApplicationEvent.h"

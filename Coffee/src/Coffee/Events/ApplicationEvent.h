@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Coffee {
 	class COFFEE_API WindowResizeEvent : public Event {
 	public:

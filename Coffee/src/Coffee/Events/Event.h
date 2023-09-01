@@ -3,8 +3,6 @@
 
 #include "Coffee/Core.h"
 
-#include <string>
-#include <functional>
 
 
 namespace Coffee {

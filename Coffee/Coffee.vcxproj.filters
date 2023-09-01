@@ -37,6 +37,7 @@
     <ClInclude Include="src\Coffee\Log.h">
       <Filter>Coffee</Filter>
     </ClInclude>
+    <ClInclude Include="src\cfpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Coffee\Application.cpp">
@@ -45,5 +46,6 @@
     <ClCompile Include="src\Coffee\Log.cpp">
       <Filter>Coffee</Filter>
     </ClCompile>
+    <ClCompile Include="src\cfpch.cpp" />
   </ItemGroup>
 </Project>

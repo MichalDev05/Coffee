@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Coffee {
 	class COFFEE_API KeyEvent : public Event {
 	public:
