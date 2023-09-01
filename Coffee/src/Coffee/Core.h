@@ -10,4 +10,5 @@
 	#error Coffee supports only windows
 #endif // CF_PLATFORM_WINDOWS
 
+#define BIT(x) (1<<x)
 
