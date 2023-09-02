@@ -1,3 +1,6 @@
 [submodule "Coffee/vendor/spdlog"]
 	path = Coffee/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Coffee/vendor/GLFW"]
+	path = Coffee/vendor/GLFW
+	url = https://github.com/glfw/glfw.git

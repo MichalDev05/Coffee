@@ -8,6 +8,12 @@ workspace "Coffee"
     
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Coffee/vendor/GLFW/include"
+
+-- include premake5 from glfw here
+include "Coffee/vendor/GLFW"
+
 project "Coffee"
     location "Coffee"
     kind "SharedLib"
@@ -26,7 +32,13 @@ project "Coffee"
 
     includedirs {
         "%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links{
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"

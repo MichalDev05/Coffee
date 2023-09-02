@@ -7,6 +7,12 @@
     <Filter Include="Coffee\Events">
       <UniqueIdentifier>{11980D22-7D58-8958-4693-D2D5B212CE34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Coffee.h" />
@@ -37,6 +43,12 @@
     <ClInclude Include="src\Coffee\Log.h">
       <Filter>Coffee</Filter>
     </ClInclude>
+    <ClInclude Include="src\Coffee\Window.h">
+      <Filter>Coffee</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\cfpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +57,9 @@
     </ClCompile>
     <ClCompile Include="src\Coffee\Log.cpp">
       <Filter>Coffee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\cfpch.cpp" />
   </ItemGroup>
