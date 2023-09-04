@@ -10,9 +10,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Coffee/vendor/GLFW/include"
+IncludeDir["Glad"] = "Coffee/vendor/Glad/include"
 
 -- include premake5 from glfw here
 include "Coffee/vendor/GLFW"
+include "Coffee/vendor/Glad"
 
 project "Coffee"
     location "Coffee"
@@ -33,11 +35,13 @@ project "Coffee"
     includedirs {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links{
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
 
@@ -48,7 +52,8 @@ project "Coffee"
 
         defines {
             "CF_PLATFORM_WINDOWS",
-            "CF_BUILD_DLL"
+            "CF_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands{
