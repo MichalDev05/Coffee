@@ -83,7 +83,8 @@
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -110,6 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -137,6 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -161,6 +164,8 @@
     <ClInclude Include="src\Coffee\Events\Event.h" />
     <ClInclude Include="src\Coffee\Events\KeyEvent.h" />
     <ClInclude Include="src\Coffee\Events\MouseEvent.h" />
+    <ClInclude Include="src\Coffee\Layer.h" />
+    <ClInclude Include="src\Coffee\LayerStack.h" />
     <ClInclude Include="src\Coffee\Log.h" />
     <ClInclude Include="src\Coffee\Window.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
@@ -168,6 +173,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Coffee\Application.cpp" />
+    <ClCompile Include="src\Coffee\Layer.cpp" />
+    <ClCompile Include="src\Coffee\LayerStack.cpp" />
     <ClCompile Include="src\Coffee\Log.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\cfpch.cpp">
