@@ -164,11 +164,14 @@
     <ClInclude Include="src\Coffee\Events\Event.h" />
     <ClInclude Include="src\Coffee\Events\KeyEvent.h" />
     <ClInclude Include="src\Coffee\Events\MouseEvent.h" />
+    <ClInclude Include="src\Coffee\GamepadCodes.h" />
     <ClInclude Include="src\Coffee\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Coffee\Input.h" />
+    <ClInclude Include="src\Coffee\KeyCodes.h" />
     <ClInclude Include="src\Coffee\Layer.h" />
     <ClInclude Include="src\Coffee\LayerStack.h" />
     <ClInclude Include="src\Coffee\Log.h" />
+    <ClInclude Include="src\Coffee\MouseButtonCodes.h" />
     <ClInclude Include="src\Coffee\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />

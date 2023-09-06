@@ -7,6 +7,9 @@
 #include "Coffee/Input.h"
 #include "Coffee/ImGui/ImGuiLayer.h"
 
+#include "Coffee/KeyCodes.h"
+#include "Coffee/MouseButtonCodes.h"
+#include "Coffee/GamepadCodes.h"
 
 //ENTRY POINT
 #include "Coffee/EntryPoint.h"

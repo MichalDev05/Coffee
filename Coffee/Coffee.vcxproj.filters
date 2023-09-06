@@ -70,6 +70,9 @@
     <ClInclude Include="src\cfpch.h" />
     <ClInclude Include="src\Coffee\Input.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Coffee\KeyCodes.h" />
+    <ClInclude Include="src\Coffee\MouseButtonCodes.h" />
+    <ClInclude Include="src\Coffee\GamepadCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Coffee\Application.cpp">

@@ -56,8 +56,6 @@ namespace Coffee {
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
 
-			auto x = Input::IsMouseButtonPressed(0);
-			LOG_CORE_TRACE("{0}", x);
 
 			m_Window->OnUpdate();
 		}
