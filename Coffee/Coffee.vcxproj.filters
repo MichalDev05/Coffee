@@ -46,8 +46,17 @@
     <ClInclude Include="src\Coffee\Events\MouseEvent.h">
       <Filter>Coffee\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Coffee\GamepadCodes.h">
+      <Filter>Coffee</Filter>
+    </ClInclude>
     <ClInclude Include="src\Coffee\ImGui\ImGuiLayer.h">
       <Filter>Coffee\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Coffee\Input.h">
+      <Filter>Coffee</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Coffee\KeyCodes.h">
+      <Filter>Coffee</Filter>
     </ClInclude>
     <ClInclude Include="src\Coffee\Layer.h">
       <Filter>Coffee</Filter>
@@ -58,21 +67,22 @@
     <ClInclude Include="src\Coffee\Log.h">
       <Filter>Coffee</Filter>
     </ClInclude>
+    <ClInclude Include="src\Coffee\MouseButtonCodes.h">
+      <Filter>Coffee</Filter>
+    </ClInclude>
     <ClInclude Include="src\Coffee\Window.h">
       <Filter>Coffee</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
       <Filter>Platform\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\cfpch.h" />
-    <ClInclude Include="src\Coffee\Input.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
-    <ClInclude Include="src\Coffee\KeyCodes.h" />
-    <ClInclude Include="src\Coffee\MouseButtonCodes.h" />
-    <ClInclude Include="src\Coffee\GamepadCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Coffee\Application.cpp">
@@ -93,10 +103,12 @@
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
       <Filter>Platform\OpenGL</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\cfpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>
