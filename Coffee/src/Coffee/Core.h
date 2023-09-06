@@ -10,6 +10,10 @@
 	#error Coffee supports only windows
 #endif // CF_PLATFORM_WINDOWS
 
+#ifdef CF_DEBUG
+	#define CF_ENABLE_ASSERTS
+#endif
+
 #ifdef CF_ENABLE_ASSERTS
 	#define CF_ASSERT(x, ...) {if(!(x)) {LOG_CLIENT_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak();}}
 	#define CF_CORE_ASSERT(x, ...) {if(!(x)) {LOG_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak();}}

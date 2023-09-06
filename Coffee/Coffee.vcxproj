@@ -165,6 +165,7 @@
     <ClInclude Include="src\Coffee\Events\KeyEvent.h" />
     <ClInclude Include="src\Coffee\Events\MouseEvent.h" />
     <ClInclude Include="src\Coffee\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Coffee\Input.h" />
     <ClInclude Include="src\Coffee\Layer.h" />
     <ClInclude Include="src\Coffee\LayerStack.h" />
     <ClInclude Include="src\Coffee\Log.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\cfpch.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Coffee\Application.cpp" />
@@ -184,6 +186,7 @@
     <ClCompile Include="src\cfpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
